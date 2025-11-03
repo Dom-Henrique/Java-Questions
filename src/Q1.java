@@ -1,13 +1,13 @@
-// Hello world
+// Write a Java program to print 'Hello' on screen and your name on a separate line.
 
-public class Q1 {
+import java.util.Scanner;
+
+public class Q1{
     public static void main(String[] args){
-        String myName = "Dom Henrique";
-        System.out.println("Hello! My name is " + myName);
-        System.out.println("This is my first Java code! :D");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Your name: ");
+        String name = scanner.nextLine();
+
+        System.out.println( "Hello, \n" + name + "!");
     }
 }
-
-// public: acesso da classe pela JVM
-// static: pertence a classe em si
-// void:
